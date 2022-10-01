@@ -4,7 +4,7 @@ This application is provided to you as an alternative starter project if you do 
 
 ### Dependencies
 
-A list of project dependencies can be found [here](docs/dependencies.md).
+A list of project dependencies can be found [here](docs/Dependencies.md).
 
 ### Installation
 
