@@ -12,7 +12,7 @@ Database URI: `postgres://postgres:password123@udagram.ca17levzojpx.us-east-1.rd
 
 ### Elastic Beanstalk
 
-EB URL: `http://Nfudacityudagram-env.eba-5wtme6b9.us-east-1.elasticbeanstalk.com/`
+EB URL: `http://nfudacityudagram-env-1.eba-5wtme6b9.us-east-1.elasticbeanstalk.com/`
 
 ### S3 Bucket
 
