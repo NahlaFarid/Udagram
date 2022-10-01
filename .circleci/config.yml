@@ -12,22 +12,27 @@ jobs:
       - checkout
       - aws-cli/setup
       - eb/setup
+      # install Front-End dependencies
       - run:
           name: Front-End Install
           command: |
             npm run frontend:install
+      # install API dependencies
       - run:
           name: Back-End Install
           command: |
             npm run backend:install
+      # Build Front-End
       - run:
           name: Front-End Build
           command: |
             npm run frontend:build
+      # Build API
       - run:
           name: Back-End Build
           command: |
             npm run backend:build
+      # Deploy Front-End to S3 Bucket and API to Elastic Beanstalk
       - run:
           name: Deploy App
           command: |
@@ -35,10 +40,12 @@ jobs:
             npm run backend:deploy
             echo "Deploying frontend"
             npm run frontend:deploy
+# Invoke jobs via workflows
 workflows:
   build_and_deploy:
     jobs:
       - build
         filters:
           branches:
-            only: main
+            only: 
+              - main
