@@ -45,6 +45,8 @@ workflows:
   build_and_deploy:
     jobs:
       - build:
+          context:
+            - my-context
           filters:
             branches:
               only:
